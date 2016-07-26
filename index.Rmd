@@ -114,10 +114,13 @@ renderDataTable({iris})
 
 ### About
 
-![Miqdad Asaria](miq.jpg) **Miqdad Asaria BEng MSc MSc**  
+![Miqdad Asaria](miq.jpg)  
+**Miqdad Asaria BEng MSc MSc**  
 Miqdad has an academic background in Computer Science and Economics. Prior to joining the Centre for Health Economics in 2010 he spent many years working in financial markets, researching for think tanks, and working on health policy at the Department of Health in the UK. 
 
 Miqdad's work focusses primarily on health inequalities, ranging from ex-post measurement and policy evaluation to incorporating health inequality concerns into ex-ante cost effectiveness analysis models. He has methodological interests in applying complex survival analysis techniques to large linked administrative and observational datasets and more broadly to the methodological challenges of working with big data.  
-
-![Khalil Hassanally](khalil.jpg) **Dr Khalil Hassanally BSc MBBS LLB MRCGP MA**    
+  
+    
+![Khalil Hassanally](khalil.jpg)  
+**Dr Khalil Hassanally BSc MBBS LLB MRCGP MA**    
 Khalil is a computer scientist turned GP whose main focus of clinical practice is amongst the homeless population of London. In addition to his clinical practice Khalil maintains an acemeic interest in areas of medical law, bioethics and medical anthropology.
