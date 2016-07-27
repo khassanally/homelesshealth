@@ -100,7 +100,7 @@ May be a useful feature to compare the trends in one practice over time also.
 
 Here I thought we could allow death data to be viewed over a time. Maybe by drop down box allowing people to choose the year or cause of death....but I wonder if there is a more elegant soloution?
 
-### Access Raw Data
+### Summary Tables
 
 Add some tables and discussion here. Is it easy to run reports. For example could someone slect - show me where cause of death is "Decompensated Liver Disease"?
 
