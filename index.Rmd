@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Background
 
-This site is a collaboration between clinician and computer scientist to help bridge the gap in the paucity of homeless health data.  Please click on the tabs above to create your own graphs where mortality and population level data can be viewed.
+This site is a collaboration between a clinician and a computer scientist to help bridge the gap in the paucity of homeless health data.  Please click on the tabs above to create your own graphs where mortality and population level data can be viewed.
 
 Over time we hope that all homeless primary care services will be happy to share their anonymized data on this site, we hope that the contributing services will find the data we show to be of use, at the very least we hope to be able to provide a picture of what the health of homeless is like. We dare to dream further however, and hope that this site in time may allow us to know where to focus our efforts and play a part, however small in improving the health care outcomes of our homeless patients.
 
@@ -33,7 +33,7 @@ Add some background info
 
 Using the fields below select the data you would like to use to draw up a bar plot of looking at the cause of homeless death. *On the x axis we would have cause of death and the y axis age of death.*
 
-```{r eruptions, echo=FALSE}
+```{r homeless, echo=FALSE}
 inputPanel(
   selectInput("Age_at_Death", label = "Age at death:",
               choices = c("All ages", "Under 30", "30-40", "40-50", "50-60", "Over 60"), selected = "All ages"),
@@ -58,10 +58,10 @@ inputPanel(
 )
 
 renderPlot({
-  hist(faithful$eruptions, probability = TRUE, breaks = as.numeric(input$n_breaks),
+  hist(faithful$eruptions, probability = TRUE, breaks = as.numeric(input$Alcohol),
        xlab = "Duration (minutes)", main = "Geyser eruption duration")
   
-  dens <- density(faithful$eruptions, adjust = input$bw_adjust)
+  dens <- density(faithful$eruptions, adjust = input$Alcohol/1000)
   lines(dens, col = "blue")
 })
 ```
