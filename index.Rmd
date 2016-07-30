@@ -1,16 +1,22 @@
 ---
-title: "Homeless Health"
+title: "Primary Care Homeless Health Data"
 output: 
   html_document:
     theme: sandstone
     highlight: tango
-    #toc: true
-    #toc_float: true
+    ##toc: true
+    ##toc_float: true
 runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
+
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(plyr)
+library(dplyr)
+
+
 ```
 
 *This business of people just dying like animals, for instance, with nobody standing by, nobody interested, the death not even noticed till the morning* ~  George Orwell _from_ How The Poor Die
@@ -20,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Background
 
-This site is a collaboration between a clinician and a computer scientist to help bridge the gap in the paucity of homeless health data.  Please click on the tabs above to create your own graphs where mortality and population level data can be viewed.
+This site is a collaboration between clinician and computer scientist to help bridge the gap in the paucity of homeless health data.  Please click on the tabs above to create your own graphs where mortality and population level data can be viewed.
 
 Over time we hope that all homeless primary care services will be happy to share their anonymized data on this site, we hope that the contributing services will find the data we show to be of use, at the very least we hope to be able to provide a picture of what the health of homeless is like. We dare to dream further however, and hope that this site in time may allow us to know where to focus our efforts and play a part, however small in improving the health care outcomes of our homeless patients.
 
@@ -33,59 +39,186 @@ Add some background info
 
 Using the fields below select the data you would like to use to draw up a bar plot of looking at the cause of homeless death. *On the x axis we would have cause of death and the y axis age of death.*
 
-```{r homeless, echo=FALSE}
+```{r causes_of-death, echo=FALSE}
+
+Death <- read.csv("Data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
+
 inputPanel(
-  selectInput("Age_at_Death", label = "Age at death:",
+  selectInput("age_at_death", label = "Age at death:",
               choices = c("All ages", "Under 30", "30-40", "40-50", "50-60", "Over 60"), selected = "All ages"),
   
-  selectInput("Practice", label = "Which Practice:",
+  selectInput("practice", label = "Which Practice:",
               choices = c("All", "Health E1", "The Greenhouse"), selected = "All"),
 
-  selectInput("Place_of_death", label = "Place of Death:",
-              choices = c("Anywhere", "Hospital", "Hospice", "Public Area", "Home"), selected = "Anywhere"),  
+  selectInput("place_of_death", label = "Place of Death:",
+              choices = c("Anywhere", "Hospital", "Hospice", "Street", "Home"), selected = "Anywhere"),  
   
-   selectInput("Gender", label = "Gender:",
+   selectInput("gender", label = "Gender:",
               choices = c("All", "Male", "Female"), selected = "All"),
 
-  checkboxInput("HTN", label= "Hypertension", value = FALSE, width = NULL),
-  checkboxInput("Diabetes", label= "Diabetes", value = FALSE, width = NULL),
-  checkboxInput("Antipsychotic", label= "On Anti-psychotic", value = FALSE, width = NULL),
-  checkboxInput("HepB", label= "Hepatitis B", value = FALSE, width = NULL),
-  checkboxInput("HepC", label= "Hepatitis C", value = FALSE, width = NULL),
+  checkboxInput("htn", label= "Hypertension", value = FALSE, width = NULL),
+  checkboxInput("diabetes", label= "Diabetes", value = FALSE, width = NULL),
+  checkboxInput("antipsychotic", label= "On Anti-psychotic", value = FALSE, width = NULL),
+  checkboxInput("hepB", label= "Hepatitis B", value = FALSE, width = NULL),
+  checkboxInput("hepC", label= "Hepatitis C", value = FALSE, width = NULL),
  
-  sliderInput("Alcohol", label = "Units of alcohol drunk are less than:",
-              min = 0, max = 600, value = 600, step = 10)
+  sliderInput("alcohol", label = "Units of alcohol drunk are less than:",
+              min = 0, max = 600, value = 20, step = 10)
 )
 
 renderPlot({
-  hist(faithful$eruptions, probability = TRUE, breaks = as.numeric(input$Alcohol),
-       xlab = "Duration (minutes)", main = "Geyser eruption duration")
+  ##barplot(xtabs(~Death$Classification_of_Death), las=2)
   
-  dens <- density(faithful$eruptions, adjust = input$Alcohol/1000)
-  lines(dens, col = "blue")
+  
+      age_at_death <- c(input$age_at_death)
+      if(input$age_at_death == "Under 30")
+      {
+        Death <- Death %>%
+            filter(Age_at_Death < 30)
+      }
+      else if(input$age_at_death == "30-40")
+      {
+        Death <- Death %>%
+            filter(Age_at_Death>30)
+        
+        Death <- Death %>%
+            filter(Age_at_Death<40)
+      }
+      else if(input$age_at_death == "40-50")
+      {
+        Death <- Death %>%
+            filter(Age_at_Death>40)
+        
+        Death <- Death %>%
+            filter(Age_at_Death<50)
+      }
+      else if(input$age_at_death == "40-50")
+      {
+        Death <- Death %>%
+            filter(Age_at_Death>40)
+        
+        Death <- Death %>%
+            filter(Age_at_Death<50)
+      }
+      else if(input$age_at_death == "50-60")
+      {
+        Death <- Death %>%
+            filter(Age_at_Death>50)
+        
+        Death <- Death %>%
+            filter(Age_at_Death<60)
+      }
+      else if(input$age_at_death == "Over 60")
+      {
+        Death <- Death %>%
+            filter(Age_at_Death>60)
+      }
+    
+      
+      practice <- c(input$practice)
+      if(input$practice != "All")
+      {
+      Death <- Death %>%
+           filter(Practice %in% input$practice)
+      }
+      
+      place_of_death <-c(input$place_of_death)
+      if(input$place_of_death != "Anywhere")
+      {
+        Death <- Death %>%
+          filter(Place_of_Death %in% input$place_of_death)
+      }
+      
+      gender <-c(input$gender)
+      if(input$gender != "All")
+      {
+        Death <- Death %>%
+          filter(Gender %in% input$gender)
+      }
+      
+      htn <-c(input$htn)
+      if(input$htn)
+      {
+        Death <- Death %>%
+            filter(HTN %in% input$htn)
+      }
+      
+      antipsychotic <-c(input$antipsychotic)
+      if(input$antipsychotic)
+      {
+        Death <- Death %>%
+            filter(On_Antipsychotic %in% input$antipsychotic)
+      }
+      
+      hepB <-c(input$hepB)
+      if(input$hepB)
+      {
+        Death <- Death %>%
+            filter(HepB %in% input$hepB)
+      }
+      
+      hepC <-c(input$hepC)
+      if(input$hepC)
+      {
+        Death <- Death %>%
+            filter(HepC %in% input$hepC)
+      }
+
+      Death <- Death %>%
+            filter(Alcohol > input$alcohol)
+  
+      b <- ggplot(Death, aes(x=Classification_of_Death)) +
+       geom_bar(stat="count", width=0.7, fill="steelblue")  
+      print(b)
+  
 })
+
+##pie(table(x))
+
 ```
 
 ### Plot Associations
 
-Here it would be nice if we had some scatter plots. On the x axis we would have age of death and the y axis we could have units alcohol drunk/last systolic/last diastolic/days since last seen in practice. I guess we could also have a drop down menu allowing for a selction from cause of death from:
-Decompensated Liver Disease
-Hepatocellular Carcinoma
-Accidental Overdose
-Suicide
-Lung Cancer
-Murdered
-Inconclusive
-Non Lung or Liver Cancer
-Cardiac
-Pneumonia
-Upper GI Bleed
-Natural Causes
-Sepsis Related
-Accidental
-Cerebellar Bleed
-Other
+Here it would be nice if we had some scatter plots. 
 
+
+```{r associations, echo=FALSE}
+
+Death <- read.csv("Data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
+
+inputPanel(
+  selectInput("yaxis", "Y axis Value:",
+                list("Units of Alcohol" = "Alcohol",
+                     "Last Systolic Blood Pressure" = "Last_Systolic"))
+)
+
+
+renderText({ 
+      a= "Death$"
+      paste0(a,input$yaxis)
+    })
+
+
+renderPlot({
+  
+      
+      if(input$yaxis == "Alcohol"){
+
+      p <- ggplot(Death, aes(x=Age_at_Death, y=Alcohol), fill=Practice) +
+      geom_point(shape=1, size=3, na.rm=TRUE, aes(color=Practice, shape=Practice))
+      print(p)
+      
+      }
+      
+  if(input$yaxis == "Last_Systolic"){
+  
+      p <- ggplot(Death, aes(x=Age_at_Death, y=Last_Systolic)) +
+      geom_point(shape=1, size=5)
+      print(p)
+  }
+})
+
+```
 
 ### Practice Level Epidemiology
 
@@ -100,7 +233,7 @@ May be a useful feature to compare the trends in one practice over time also.
 
 Here I thought we could allow death data to be viewed over a time. Maybe by drop down box allowing people to choose the year or cause of death....but I wonder if there is a more elegant soloution?
 
-### Summary Tables
+### Access Raw Data
 
 Add some tables and discussion here. Is it easy to run reports. For example could someone slect - show me where cause of death is "Decompensated Liver Disease"?
 
@@ -113,14 +246,3 @@ renderDataTable({iris})
 [Crisis Report Into Homless Death](http://www.crisis.org.uk/data/files/publications/Homelessness%20kills%20-%20Executive%20Summary.pdf).
 
 ### About
-
-![Miqdad Asaria](miq.jpg)  
-**Miqdad Asaria BEng MSc MSc**  
-Miqdad has an academic background in Computer Science and Economics. Prior to joining the Centre for Health Economics in 2010 he spent many years working in financial markets, researching for think tanks, and working on health policy at the Department of Health in the UK. 
-
-Miqdad's work focusses primarily on health inequalities, ranging from ex-post measurement and policy evaluation to incorporating health inequality concerns into ex-ante cost effectiveness analysis models. He has methodological interests in applying complex survival analysis techniques to large linked administrative and observational datasets and more broadly to the methodological challenges of working with big data.  
-  
-    
-![Khalil Hassanally](khalil.jpg)  
-**Dr Khalil Hassanally BSc MBBS LLB MRCGP MA**    
-Khalil is a computer scientist turned GP whose main focus of clinical practice is amongst the homeless population of London. In addition to his clinical practice Khalil maintains an acemeic interest in areas of medical law, bioethics and medical anthropology.
