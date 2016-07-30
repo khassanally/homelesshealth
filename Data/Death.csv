@@ -1,0 +1,204 @@
+Age_at_Death,Gender,Place_of_death,Date_of_Death,DoB,Cause_of_Death,Classification_of_Death,Alcohol,Opiods,Bendzodiazapine,HepB,HepC,Last_seen,Time_Since_Seen,Last_Systolic,Last_Diastolic,Date_of_last_BP,Diabetes,HTN,On_Antipsychotic,Seen_once_or _less,Practice,Area,Comments
+47,M,Home,28/12/2013,06/01/1966,Open verdict,Inconclusive,399,FALSE,FALSE,FALSE,FALSE,27/11/2013,31,132,88,28/08/2013,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Found collapsed at home
+39,F,Home,02/09/2009,04/09/1969,NA,NA,280,TRUE,FALSE,FALSE,FALSE,29/07/2009,35,128,69,09/03/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+50,M,Hospice,17/07/2016,29/06/1966,Oral Cancer (SCC),Non Lung or Liver Cancer,Lots,FALSE,FALSE,FALSE,FALSE,07/07/2016,10,99,80,11/03/2015,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+54,M,Hopsital,01/12/2014,01/01/1969,MI,Cardiac,0,FALSE,FALSE,FALSE,FALSE,18/11/2014,13,150,99,18/11/2014,TRUE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+30,M,Street,09/11/2009,15/03/1979,Suspected murdered,Murdered,238,NA,NA,FALSE,FALSE,29/10/2009,11,144,92,06/10/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+43,M,NA,12/06/2007,01/01/1964,Suspected MI,Cardiac,60,FALSE,FALSE,FALSE,FALSE,29/05/2007,14,121,72,05/02/2007,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,"Crack, Olanzapine, Clopixol dept, Khat"
+48,M,Home,12/09/2008,30/05/1960,MI,Cardiac,4,NA,NA,NA,FALSE,03/09/2008,9,154,92,03/09/2008,FALSE,TRUE,NA,FALSE,Health E1,Tower Hamlets,Found in his room - likley after some days
+60,M,Street,04/01/2002,07/04/1941,Hypothermia,Cardiac,NA,NA,NA,NA,FALSE,20/03/2001,290,120,74,20/03/2001,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,Had alcohol related dementia
+49,M,Home,21/12/2005,29/12/1966,NA,NA,10,TRUE,FALSE,NA,FALSE,25/07/2005,149,120,78,12/07/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Crack
+65,M,Home,21/08/2012,23/03/1947,NA,NA,16,FALSE,FALSE,FALSE,FALSE,29/04/2009,1210,134,90,08/04/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Last seen 10 days before death. Found surrounded by beer cans
+26,M,NA,NA,15/08/1988,NA,NA,280,TRUE,FALSE,FALSE,TRUE,20/08/2013,NA,125,76,31/07/2003,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Crack
+42,M,NA,03/09/2015,26/07/1973,Diabetic Ketoacidosis,Other,0,FALSE,FALSE,FALSE,FALSE,24/08/2015,10,133,73,20/07/2015,TRUE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Quetiapine
+44,M,Home,17/07/2010,17/10/1965,Inconclusive,Inconclusive,140,TRUE,FALSE,FALSE,TRUE,08/07/2010,9,114,96,20/05/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Known liver disease
+41,M,NA,05/05/2015,22/07/1974,Overdose - ?suicide,Suicide,0,FALSE,FALSE,FALSE,FALSE,04/02/2015,90,149,93,10/12/2014,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Quetiapine
+53,F,Home,04/06/2016,31/07/1962,Adenocarconoma Lung,Lung Cancer,5,TRUE,TRUE,FALSE,TRUE,20/05/2016,15,125,75,22/06/2015,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+63,M,Hospice,26/10/2015,04/04/1952,Lower limb ischamia,Other,Lots previously,TRUE,FALSE,FALSE,FALSE,13/10/2015,13,150,81,26/11/2014,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+54,M,Home,13/11/2015,13/11/2015,MI,Cardiac,172,FALSE,FALSE,FALSE,FALSE,26/10/2015,18,137,89,13/05/2015,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+23,F,Home,27/06/2006,11/02/1983,Suspected OD,Accidental Overdose,NA,TRUE,NA,NA,NA,07/02/2006,140,133,80,07/02/2006,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Found dead in bath
+47,F,Home,09/03/2010,29/06/1964,NA,NA,100,FALSE,FALSE,FALSE,FALSE,08/03/2012,NA,131,88,02/02/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+33,F,Hospital,02/07/2014,20/04/1977,Overdose - ?accidental,Accidental Overdose,0,TRUE,FALSE,FALSE,FALSE,18/06/2010,1475,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+45,M,Home,21/12/2005,25/08/1980,NA,NA,NA,NA,NA,NA,NA,Never seen,NA,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Died before was ever seen
+60,F,Hospital,26/01/2014,08/01/1953,Pnumonia,Pneumonia,140,TRUE,TRUE,Hep C,TRUE,30/11/2012,422,89,66,15/11/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Drug resistant TB
+32,M,Home,20/01/2005,14/10/1972,NA,NA,50,TRUE,FALSE,FALSE,FALSE,24/01/2005,NA,148,96,20/10/2004,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Likely alcohol underestimate
+55,M,NA,01/11/2004,21/01/1949,SCC Lung,Lung Cancer,120,FALSE,FALSE,FALSE,FALSE,13/09/2004,49,120,72,12/01/2004,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+42,M,NA,NA,06/02/1971,Suspected murdered,Murdered,1,FALSE,TRUE,Hep B,FALSE,13/01/2012,NA,94,67,13/01/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+45,M,Hospital,11/04/2014,28/09/1968,Decompensated liver disease,Decompensated Liver Disease,280,TRUE,TRUE,FALSE,TRUE,26/03/2014,16,119,83,12/03/2014,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+46,M,Home,18/07/2014,29/02/1968,NA,NA,189,FALSE,FALSE,FALSE,FALSE,21/03/2014,119,142,105,19/09/2013,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+58,M,Home,01/12/2010,01/06/1952,NA,NA,0,FALSE,FALSE,FALSE,FALSE,20/10/2010,42,126,82,20/10/2010,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Abilify
+56,M,Hospital,23/10/2009,18/05/1953,Metastatic Gastric Adenoma,Non Lung or Liver Cancer,8,FALSE,FALSE,FALSE,FALSE,29/09/2009,24,100,66,10/09/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+53,M,Hospital,02/06/2016,01/01/1953,Cardiogenic shock secondarcy to alcoholic cardiomyopathy,Cardiac,300,NA,NA,NA,NA,12/05/2006,3674,100,68,10/05/2006,NA,NA,NA,FALSE,Health E1,Tower Hamlets,
+56,M,NA,NA,13/05/1949,NA,NA,NA,NA,NA,NA,NA,23/02/2006,NA,130,80,27/01/2006,NA,NA,NA,FALSE,Health E1,Tower Hamlets,Alcoholic
+52,M,Home,26/01/2015,10/03/1962,NA,NA,140,TRUE,FALSE,FALSE,FALSE,21/01/2015,5,128,89,20/02/2014,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+41,M,NA,12/02/2013,08/02/1972,Suspected murdered,Murdered,1,FALSE,FALSE,FALSE,FALSE,27/12/2012,47,116,76,08/03/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+53,F,Hospice,04/06/2011,29/08/1957,SCC Oral Cavity,Non Lung or Liver Cancer,140,FALSE,FALSE,FALSE,FALSE,06/05/2011,29,126,91,17/08/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+50,M,Hospice,09/09/2013,10/02/1963,Gastric adenocarcinoma,Non Lung or Liver Cancer,0,FALSE,FALSE,FALSE,FALSE,26/06/2013,75,132,87,25/07/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+29,M,Street,08/08/2001,20/08/1972,Suspected OD - ?accidental,Accidental Overdose,72,TRUE,TRUE,NA,NA,08/06/2001,61,100,70,19/03/2001,NA,NA,NA,FALSE,Health E1,Tower Hamlets,
+37,F,NA,06/03/2010,26/11/1972,Suspected murdered,Murdered,4,FALSE,FALSE,FALSE,FALSE,08/03/2010,NA,126,90,14/05/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+30,M,Home,02/03/2006,27/06/1976,Suspected OD - ?accidental,Accidental Overdose,300,TRUE,NA,NA,NA,08/11/2005,114,132,76,08/11/2005,NA,NA,NA,FALSE,Health E1,Tower Hamlets,
+51,F,Home,03/08/2003,08/08/1952,NA,NA,NA,NA,NA,NA,NA,08/05/2003,87,107,74,11/04/2003,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,Known alcoholic cardiomyopathy
+64,M,Hospice,25/07/2015,06/05/1951,Adenocarconoma Lung,Lung Cancer,200,FALSE,FALSE,FALSE,FALSE,16/06/2015,39,127,78,06/01/2015,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+48,M,Home,19/11/2003,23/12/1964,Accidental inhalation of Chlorine fumes whilst intoxicated,Accidental,140,NA,NA,NA,NA,12/09/2012,NA,115,79,02/08/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+73,M,Home,13/07/2010,12/02/1937,NA,NA,20,FALSE,FALSE,FALSE,FALSE,22/06/2010,21,159,90,22/06/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Invx for suspected lung cancer
+50,M,Home,10/12/2007,01/06/1957,NA,NA,99,TRUE,TRUE,FALSE,TRUE,29/08/2007,103,107,64,11/07/2007,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+36,M,Street,07/11/2004,21/01/1969,Suspected OD - ?accidental,Accidental Overdose,NA,TRUE,NA,NA,NA,27/10/2004,11,120,76,17/08/2004,NA,NA,NA,FALSE,Health E1,Tower Hamlets,Known alcohol dependence
+51,F,Street,12/03/2014,13/11/1962,Gastric bleed secondary to gastric erosions,Upper GI Bleed,0,FALSE,FALSE,FALSE,FALSE,12/03/2014,0,127,74,09/04/2013,TRUE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Sarcoidosis
+35,M,Hospital,02/05/2011,20/10/1975,Decompensated liver disease,Decompensated Liver Disease,236,TRUE,FALSE,FALSE,TRUE,13/04/2011,19,139,85,13/04/2011,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+32,F,Park,12/06/2011,28/08/1979,NA,NA,150,TRUE,TRUE,FALSE,FALSE,22/04/2011,51,134,89,25/01/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+43,F,NA,NA,19/02/1959,NA,NA,200,TRUE,NA,NA,FALSE,19/08/2002,NA,127,88,15/02/2002,NA,NA,NA,FALSE,Health E1,Tower Hamlets,
+68,M,Home,13/09/2015,03/07/1947,Pnumonia,Pneumonia,0,TRUE,TRUE,FALSE,TRUE,10/09/2015,3,105,69,06/07/2015,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,"Risperidone, Quetiapine"
+60,M,Hospital,21/01/2012,23/06/1951,Lung Cancer,Lung Cancer,100,FALSE,FALSE,FALSE,FALSE,28/11/2011,54,106,86,04/05/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+45,M,Hospital,28/03/2010,19/06/1965,Suspected OD - ?accidental,Accidental Overdose,0,TRUE,TRUE,FALSE,TRUE,24/09/2010,NA,135,86,24/09/2010,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+37,M,Street,06/02/2006,28/10/1968,Overdose,Accidental Overdose,112,NA,NA,NA,NA,12/01/2006,25,143,105,12/01/2006,NA,TRUE,NA,TRUE,Health E1,Tower Hamlets,Only seen on registration visit
+34,M,NA,28/11/2001,29/08/1967,NA,NA,NA,TRUE,NA,NA,NA,26/10/2001,33,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Only seen on registration visit
+40,M,NA,05/01/2011,06/02/1970,Suspected murdered,Murdered,365,FALSE,FALSE,NA,NA,14/07/2010,175,125,80,29/09/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+53,M,Hospital,14/11/2007,20/03/1954,Decompensated liver disease,Decompensated Liver Disease,NA,NA,NA,NA,NA,29/10/2007,16,NA,NA,NA,NA,NA,NA,FALSE,Health E1,Tower Hamlets,Known alcohol dependence
+68,M,Street,03/05/2011,17/07/1942,NA,NA,0,FALSE,FALSE,FALSE,FALSE,14/03/2011,50,136,76,11/01/2011,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+43,M,Hospital,05/12/2004,03/05/1961,Accidental OD,Accidental Overdose,NA,TRUE,TRUE,NA,NA,20/05/2002,930,NA,NA,NA,NA,NA,NA,FALSE,Health E1,Tower Hamlets,"Thought he was buying diazapam - turned out to be warfarin, Alcoholic"
+57,M,Home,18/11/2013,13/06/1956,MI,Cardiac,NA,FALSE,FALSE,FALSE,FALSE,23/10/2013,26,104,66,18/09/2013,TRUE,TRUE,TRUE,FALSE,Health E1,Tower Hamlets,"Quetiapine, Previous alcoholic"
+53,M,Hospital,04/06/2002,06/05/1948,Subdural heamorhage,Other,119,FALSE,FALSE,NA,FALSE,21/03/2002,75,140,80,13/11/2000,NA,NA,FALSE,FALSE,Health E1,Tower Hamlets,
+53,M,Hospital,18/04/2006,31/01/1953,Decompensated liver disease,Decompensated Liver Disease,50,TRUE,FALSE,FALSE,TRUE,24/03/2006,25,117,93,15/11/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Seen and sent in by GP prior to death
+42,M,Home,14/10/2012,12/06/1970,Unascertainable,Inconclusive,4,FALSE,FALSE,FALSE,FALSE,11/09/2012,33,126,92,11/09/2012,FALSE,TRUE,TRUE,FALSE,Health E1,Tower Hamlets,Body too decomposed to know. Had been on olanzapine
+41,M,Hospital,18/04/2006,07/01/1965,NA,NA,8,FALSE,FALSE,NA,NA,13/03/2006,36,137,75,19/12/2005,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Olanzapine. Terminal admission due to upper GI bleed and asthma
+61,M,Hospital,14/03/2011,26/06/1949,Biliary sepsis,Sepsis Related,0,FALSE,FALSE,FALSE,FALSE,11/02/2011,31,130,61,21/01/2010,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,Had renal failure also
+49,M,Home,08/03/2013,26/12/1963,NA,NA,84,TRUE,TRUE,FALSE,TRUE,27/02/2013,9,140,80,19/02/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+59,M,Home,11/01/2006,14/10/1946,NA,NA,NA,NA,NA,NA,NA,Never seen,NA,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Never seen in practce
+50,M,Home,04/11/2015,26/10/1965,NA,NA,0,FALSE,FALSE,FALSE,FALSE,26/06/2015,131,136,72,15/04/2015,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+51,M,Hospice,04/01/1963,09/12/2014,Metastic tumour tonsil,Non Lung or Liver Cancer,NA,FALSE,FALSE,FALSE,FALSE,12/11/2014,NA,131,79,30/06/2014,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Previous alcohol problems
+54,M,On Holiday,14/01/2016,22/10/1961,NA,NA,10,TRUE,FALSE,FALSE,TRUE,31/12/2014,379,146,80,15/12/2015,FALSE,TRUE,TRUE,FALSE,Health E1,Tower Hamlets,Died in Thialand in sleep. Olanzapine
+49,M,Hopsital,06/03/2009,06/03/2009,Unkown,NA,0,FALSE,FALSE,FALSE,FALSE,23/02/2009,11,165,102,24/11/2008,TRUE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,Renal disease also
+42,M,Hospital,29/01/2011,11/11/1968,Decompensated liver disease,Decompensated Liver Disease,350,FALSE,FALSE,FALSE,FALSE,05/11/2011,NA,120,91,01/02/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+28,F,NA,11/06/2004,27/04/1976,Unkown,NA,0,TRUE,TRUE,NA,FALSE,06/06/2003,371,110,80,13/11/2001,NA,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+45,M,Hospital,12/04/2008,04/07/1963,Unkown,NA,90,TRUE,FALSE,FALSE,TRUE,09/04/2008,3,122,68,29/10/2007,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+42,M,Hospital,20/06/2011,26/10/1968,Decompensated liver disease,Upper GI Bleed,189,TRUE,FALSE,FALSE,TRUE,12/05/2011,39,99,67,30/06/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Had upper GI bleed on terminal admission
+52,M,Home,20/04/2016,29/03/1964,Upper GI Bleeds,Upper GI Bleed,115,FALSE,FALSE,FALSE,FALSE,15/07/2013,1010,146,82,04/07/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+41,M,Home,26/05/2010,02/02/1969,Upper GI Bleed,Upper GI Bleed,117,FALSE,FALSE,FALSE,FALSE,08/04/2010,48,123,87,24/03/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Likely to have been dead sometime
+58,M,Hospital,03/07/2014,10/02/1955,Pnumonia,Pneumonia,112,TRUE,FALSE,FALSE,TRUE,07/05/2014,57,153,92,14/07/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+52,F,Hospice,03/05/2004,02/11/1951,Renal Cancer,Non Lung or Liver Cancer,NA,NA,NA,NA,FALSE,Never seen,NA,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Never seen in practce
+44,M,Home,25/10/2007,24/06/2003,Acute MI,Cardiac,NA,NA,NA,NA,FALSE,21/12/2006,308,141,85,08/09/2006,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Previous alcohol problems. Epileptic
+46,M,Hospital,17/05/2015,24/11/1967,Metastic Pancreatic Cancer,Non Lung or Liver Cancer,98,FALSE,FALSE,FALSE,FALSE,14/04/2014,398,141,92,02/05/2013,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+56,M,NA,NA,11/06/1958,NA,NA,100,FALSE,FALSE,FALSE,FALSE,16/05/2012,NA,123,87,28/04/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+34,M,Hospital,11/06/2015,04/05/1981,Subdural heamorhage (accidental head injury),Accidental,250,TRUE,TRUE,FALSE,TRUE,13/04/2015,59,111,62,09/02/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+36,M,Home,09/10/2010,21/10/1973,NA,NA,405,FALSE,FALSE,FALSE,FALSE,29/10/2010,NA,110,84,29/06/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Died in sleep. Epileptic
+61,F,Hospital,08/12/2010,09/09/1949,Status Epilepticus,Other,0,FALSE,FALSE,FALSE,FALSE,05/08/2010,125,136,87,10/05/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Epileptic
+61,M,Hospital,28/01/2008,30/11/1946,Unkown,NA,0,FALSE,FALSE,FALSE,FALSE,26/05/2006,612,134,80,27/03/2006,TRUE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+35,M,NA,29/11/2010,05/07/1975,NA,NA,190,FALSE,FALSE,FALSE,TRUE,15/02/2010,287,128,69,10/11/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+61,F,Home,24/12/2015,23/01/1954,Suspected OD - ?accidental,Accidental Overdose,0,TRUE,TRUE,FALSE,TRUE,23/12/2015,1,98,63,23/12/2015,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Had SCC anus - may have accidental OD on pain medication
+31,M,Hospital,31/05/1978,31/05/1978,Intercerebral bleed - presumed secondary to sepsis,Sepsis Related,0,TRUE,TRUE,FALSE,FALSE,31/05/1978,0,117,67,25/03/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+33,F,Hospital,20/08/2008,06/08/1975,Decompensated liver disease,Decompensated Liver Disease,28,TRUE,TRUE,FALSE,TRUE,21/08/2007,365,NA,NA,NA,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,
+45,M,Home,23/12/2004,02/12/1969,NA,NA,336,TRUE,TRUE,FALSE,TRUE,10/12/2014,NA,122,88,06/06/2013,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Olanzapine
+52,M,Hospital,26/07/2013,03/12/1960,Multiorgan failure,Decompensated Liver Disease,280,TRUE,TRUE,FALSE,TRUE,24/06/2013,32,105,72,17/07/2013,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Had alcoholic cardiomyopathy. Arrested in practice
+31,M,Home,06/10/2001,28/10/1978,Overdose - ?suicide,Suicide,0,TRUE,FALSE,FALSE,TRUE,05/10/2010,NA,138,88,25/05/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+39,M,NA,NA,06/06/1966,NA,NA,NA,TRUE,NA,NA,NA,13/12/2004,NA,NA,NA,NA,NA,NA,NA,FALSE,Health E1,Tower Hamlets,
+47,M,Home,27/12/2007,11/06/1960,Alcohol poisioining,Accidental Overdose,420,FALSE,FALSE,FALSE,TRUE,12/03/2007,290,148,89,07/11/2006,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+48,M,Hospital,18/07/2006,21/07/1960,Subdural heamorrhage,Other,210,TRUE,NA,NA,NA,21/03/2005,484,NA,NA,NA,NA,NA,FALSE,FALSE,Health E1,Tower Hamlets,
+33,M,Home,14/01/2003,05/04/1972,Overdose - ?accidental,Suicide,60,TRUE,FALSE,Np,TRUE,23/01/2002,356,120,70,24/01/2001,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+33,F,Hospital,05/11/2014,17/05/1981,Infective endocarditis,Accidental Overdose,210,TRUE,TRUE,FALSE,TRUE,25/02/2013,618,126,84,25/02/2013,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+54,M,Home,20/12/2001,13/07/1962,Overdose - ?accidental,Accidental Overdose,300,TRUE,NA,NA,NA,05/12/2001,15,160,90,20/11/2001,NA,NA,NA,FALSE,Health E1,Tower Hamlets,
+50,M,Hospital,06/08/2008,30/11/1957,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,10/03/2008,149,140,82,12/02/2008,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+49,F,Home,17/01/2014,10/12/1964,Unkown,NA,90,TRUE,TRUE,FALSE,FALSE,23/03/2012,665,138,117,24/03/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Had been dead a while. HIV
+44,M,Hospital,29/08/2006,14/02/1962,Unkown,NA,56,TRUE,TRUE,NA,NA,12/12/2005,260,149,99,13/01/2005,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Olanzapine
+29,M,Street,08/02/2011,08/02/2011,Suicide - jumped under train,Suicide,0,TRUE,FALSE,FALSE,FALSE,07/02/2011,1,108,75,21/10/2010,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Olanzapine. Risperidone
+51,M,NA,15/06/2008,13/06/1957,Overdose - ?accidental,Accidental Overdose,0,NA,NA,NA,NA,19/05/2008,27,140,84,05/04/2007,NA,NA,FALSE,FALSE,Health E1,Tower Hamlets,
+46,M,Home,31/12/2007,24/06/1961,MI,Cardiac,80,TRUE,FALSE,NA,NA,31/08/2007,122,153,86,26/07/2007,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+40,M,Home,28/05/2002,14/01/1962,Heart failure - cardiac myopathy,Cardiac,210,FALSE,FALSE,FALSE,FALSE,28/02/2002,89,110,70,18/12/2000,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+43,M,NA,18/09/2003,09/01/1960,Suspected murdered,Murdered,56,NA,NA,NA,NA,21/07/2003,59,120,80,30/01/2002,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Cocaine dependence
+26,F,Home,01/02/2006,08/05/1979,NA,NA,10,TRUE,NA,NA,NA,16/01/2006,16,110,70,28/08/2001,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+49,F,Home,09/05/2011,22/07/1962,NA,NA,5,FALSE,FALSE,NA,NA,18/05/2010,356,109,71,27/04/2010,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Crack use
+32,M,Home,19/09/2011,19/10/1978,Overdose - ?accidental,Accidental Overdose,189,TRUE,TRUE,FALSE,TRUE,15/09/2011,4,121,84,14/06/2011,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,"Resperidone, Olanzapine"
+36,M,Home,21/10/2010,01/04/1974,NA,NA,300,TRUE,FALSE,FALSE,TRUE,20/10/2010,1,120,69,02/06/2008,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+36,M,Home,03/04/2006,17/06/1970,Overdose - ?accidental,Accidental Overdose,315,TRUE,NA,FALSE,TRUE,02/09/2005,213,100,65,25/08/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Body found decomposed after a while
+45,M,Street,25/02/2012,18/05/1967,Unkown,NA,12,NA,NA,FALSE,FALSE,15/02/2012,10,129,83,04/01/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+24,M,Home,07/09/2007,08/03/1984,Suicide - jumped out of window,Lung Cancer,NA,NA,NA,NA,FALSE,12/06/2007,87,139,73,17/05/2007,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+48,F,Home,09/02/2007,27/11/1958,Unkown,NA,56,TRUE,FALSE,FALSE,TRUE,07/02/2007,2,135,69,05/10/2006,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+45,M,Hospital,22/01/2015,08/08/1969,Decompensated liver disease,Upper GI Bleed,176,FALSE,FALSE,FALSE,FALSE,24/12/2014,29,137,70,28/07/2014,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Large upper GI bleed before death
+38,F,Flat,31/10/2013,19/01/1975,Unkown,NA,284,TRUE,FALSE,FALSE,TRUE,25/07/2013,98,129,92,25/07/2013,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,HIV
+42,M,Home,14/06/2013,10/10/1970,Overdose - ?accidental,Accidental Overdose,95,TRUE,FALSE,NA,NA,08/04/2013,67,120,80,20/12/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+63,M,Hospital,03/04/2015,21/06/1951,Pancreatitis secondary to etoh,Other,NA,FALSE,FALSE,FALSE,FALSE,12/05/2014,326,156,85,09/08/2013,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Abilify
+48,M,Home,12/11/2011,04/12/1963,NA,NA,140,TRUE,TRUE,FALSE,TRUE,15/12/2009,697,137,86,18/06/2008,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+39,M,Flat,28/07/2009,29/06/1970,NA,NA,7,TRUE,FALSE,FALSE,TRUE,09/07/2009,19,122,74,28/04/2009,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,On dialysis
+58,M,Home,27/01/2012,27/10/1953,Acute left ventricular failure,Cardiac,NA,TRUE,FALSE,FALSE,FALSE,18/01/2012,9,116,74,04/01/2012,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+35,M,Hospital,28/11/2011,26/12/1973,Sepsis (Staph),Sepsis Related,0,TRUE,FALSE,FALSE,TRUE,20/12/2011,NA,146,90,08/09/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Had septic emboli causing cerebral infarct. CRF
+51,M,Hospital,15/02/2012,31/08/1960,Decompensated liver disease,Decompensated Liver Disease,123,FALSE,FALSE,N,FALSE,28/10/2011,110,146,103,27/05/2011,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+47,F,Hospital,31/08/2011,29/09/1963,Hepatorenal Syndrome,Decompensated Liver Disease,80,TRUE,TRUE,TRUE,TRUE,01/06/2011,91,140,90,05/01/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+68,M,Street,29/09/2006,09/06/1938,Unkown,NA,0,NA,NA,NA,NA,27/09/2006,2,183,105,25/09/2006,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+46,M,Hospital,01/09/2012,20/11/1965,Decompensated liver disease,Upper GI Bleed,56,FALSE,FALSE,FALSE,FALSE,04/07/2012,59,100,71,24/04/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Upper GI bleed prior to death
+36,M,Street,03/06/2012,07/02/1976,Road Traffic Accident,Accidental,210,NA,NA,NA,NA,17/02/2012,107,125,70,17/02/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+43,M,NA,15/03/2007,05/06/1963,NA,NA,200,NA,FALSE,NA,NA,23/02/2005,750,NA,NA,NA,NA,NA,NA,FALSE,Health E1,Tower Hamlets,
+46,M,Home,27/05/2005,06/04/1960,NA,NA,NA,NA,NA,NA,NA,23/03/2005,65,NA,NA,NA,NA,NA,NA,FALSE,Health E1,Tower Hamlets,Found dead in bath
+65,M,Home,07/10/2009,16/11/1943,MI,Cardiac,0,FALSE,TRUE,FALSE,FALSE,30/09/2009,7,129,72,08/05/2009,TRUE,TRUE,TRUE,FALSE,Health E1,Tower Hamlets,Abilify
+41,M,Home,18/03/2010,07/07/1968,NA,NA,140,FALSE,FALSE,FALSE,FALSE,11/12/2009,97,112,73,30/06/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+35,F,Hospital,21/08/2012,11/05/1977,Necrotising Facitis,Sepsis Related,0,TRUE,FALSE,FALSE,FALSE,09/08/2012,12,114,80,27/07/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Previous alcohol dependence
+37,M,Street,17/06/2004,19/08/1967,NA,NA,NA,NA,NA,NA,FALSE,06/02/2004,132,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Only see on registration. Died in toilets
+43,M,Hospital,08/07/2008,28/06/1965,NA,NA,0,TRUE,TRUE,FALSE,TRUE,27/05/2008,42,120,69,27/05/2008,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+50,M,Home,NA,26/11/1965,NA,NA,140,FALSE,FALSE,FALSE,FALSE,19/10/2005,NA,126,88,19/10/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+39,M,Hospital,20/07/2006,25/03/1967,Pnumonia,Pneumonia,0,TRUE,FALSE,FALSE,TRUE,10/03/2006,132,120,76,03/10/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+46,M,Hospital,26/08/2013,02/04/2006,UGI Bleed - likely decompensated liver disease,Upper GI Bleed,441,TRUE,TRUE,FALSE,TRUE,03/05/2013,115,130,84,01/05/2012,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+59,M,Hospital,05/05/2011,31/01/1952,Renal Cancer,Non Lung or Liver Cancer,2,FALSE,FALSE,FALSE,FALSE,18/04/2011,17,116,83,01/04/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+63,M,NA,05/05/2006,22/01/1943,NA,NA,0,FALSE,FALSE,FALSE,FALSE,12/04/2006,23,121,83,15/03/2006,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+57,M,Home,22/06/2015,19/08/1957,NA,NA,0,TRUE,TRUE,FALSE,TRUE,28/11/2014,206,146,98,01/06/2014,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+51,F,Hospital,23/09/2005,09/01/1954,NA,NA,NA,FALSE,FALSE,FALSE,TRUE,29/03/2005,178,106,91,24/04/2002,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Known alcoholic chirrohcis
+43,F,Hospital,13/10/2005,20/05/1972,CCF + Infective endocarditis,Cardiac,10,TRUE,TRUE,FALSE,TRUE,11/09/2015,NA,130,80,23/09/2009,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+31,M,Hospital,05/08/2006,24/02/1975,PE,Other,NA,TRUE,FALSE,FALSE,TRUE,04/09/2003,1066,NA,NA,NA,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Non-compliant with warfarin. Olanzapine
+64,M,Street,17/06/2008,25/12/1943,Overdose - ?accidental,Accidental Overdose,NA,TRUE,NA,NA,NA,14/06/2007,369,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Only seen on registration visit
+46,M,Hospital,09/10/2007,02/01/1961,UGI Bleed - likely decompensated liver disease,Upper GI Bleed,224,FALSE,FALSE,FALSE,FALSE,02/08/2007,68,118,64,01/11/2006,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+25,F,Home,21/10/2002,21/10/2002,NA,NA,No,TRUE,TRUE,FALSE,TRUE,03/05/2002,171,110,70,06/11/2000,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Found in bath
+38,M,Hospital,20/12/2008,23/02/1970,NA,NA,NA,NA,NA,NA,NA,Never seen,NA,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Never seen in practce
+42,M,Street,04/05/2008,21/06/1966,Unascertainable,Inconclusive,NA,NA,NA,NA,NA,Never seen,NA,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Never seen in practce
+48,M,Hospital,27/01/2006,30/09/1957,UGI Bleed - likely decompensated liver disease,Upper GI Bleed,200,FALSE,FALSE,FALSE,FALSE,30/11/2005,58,135,89,25/08/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+38,M,Street,01/09/2002,15/12/1963,NA,NA,NA,TRUE,TRUE,NA,NA,14/06/2002,79,114,74,01/05/2002,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+66,M,NA,12/07/2010,07/03/1944,NA,NA,0,FALSE,FALSE,FALSE,FALSE,19/01/2010,174,120,70,18/08/2006,FALSE,FALSE,TRUE,FALSE,Health E1,Tower Hamlets,Olanzapine
+45,M,Steet,24/01/2011,10/01/2011,Hypothermia,Other,220,FALSE,FALSE,NA,NA,18/08/2010,159,111,82,18/08/2010,FALSE,TRUE,FALSE,FALSE,Health E1,Tower Hamlets,
+54,M,Hospital,06/11/2006,11/04/1952,Decompensated liver disease,Decompensated Liver Disease,157,FALSE,FALSE,FALSE,FALSE,02/10/2006,35,120,80,15/08/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+40,M,Home,05/07/2007,05/02/1967,NA,NA,NA,NA,NA,NA,NA,Never seen,NA,NA,NA,NA,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Never seen in practce
+27,M,Home,13/10/2009,25/05/1982,Overdose - ?accidental,Accidental Overdose,NA,NA,NA,NA,NA,23/09/2008,385,138,71,23/08/2008,NA,NA,NA,TRUE,Health E1,Tower Hamlets,Only seen on registration visit
+36,M,Home,23/08/2008,11/05/1982,Fracture Cervical Vertebra - fall from 12 foors,Suicide,140,TRUE,FALSE,NA,NA,04/03/2008,172,132,74,04/03/2008,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+45,M,Home,14/04/2014,20/08/1968,NA,NA,0,NA,NA,NA,NA,06/01/2014,98,148,114,06/01/2014,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+33,M,Street,24/04/2011,29/09/1979,Suspected murdered,Murdered,178,TRUE,TRUE,FALSE,FALSE,05/04/2011,19,123,58,22/11/2005,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,
+42,M,NA,28/05/2012,11/03/1970,Overdose - ?accidental,Accidental Overdose,NA,TRUE,NA,NA,FALSE,29/12/2011,151,116,70,09/11/2011,FALSE,FALSE,FALSE,FALSE,Health E1,Tower Hamlets,Died soon after prison release
+38,M,Own home,10/04/2016,15/07/1977,Liver failure,Decompensated Liver Disease,500,TRUE,FALSE,TRUE,FALSE,08/04/2016,2,16/05/1900,61,09/01/2015,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+48,M,Hospital,30/03/2016,04/01/1968,Liver failure,Decompensated Liver Disease,160,FALSE,FALSE,FALSE,FALSE,20/01/2016,70,135,70,20/01/2016,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+58,M,NA,NA,15/09/1955,Natural Causes,Natural Causes,4,FALSE,FALSE,FALSE,FALSE,12/05/2010,NA,148,96,25/01/2010,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+47,M,Hospital,15/05/2015,13/01/1968,Alcoholic liver disease,Decompensated Liver Disease,400,TRUE,TRUE,TRUE,TRUE,07/01/2014,493,124,72,07/01/2014,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+37,M,Home,05/03/2014,21/07/1976,Unkown,NA,200,FALSE,FALSE,FALSE,FALSE,23/12/2013,72,126,82,21/11/2012,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Found at home in decomposed state
+58,M,NA,26/06/2014,05/04/1955,Unkown,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,TRUE,The Greenhouse,Hackney,Seems to have never made contact in the year between he registered and died
+62,M,NA,03/04/2013,20/06/1950,Unkown,NA,6,NA,NA,NA,NA,16/06/2011,657,129,78,16/06/2011,NA,NA,NA,TRUE,The Greenhouse,Hackney,Seems to have never made contact in the three years between he registered and died
+40,M,Hospice,06/10/2005,08/08/1965,Hepatocellular Carcinoma,Hepatocellular Carcinoma,0,FALSE,FALSE,TRUE,FALSE,26/05/2005,133,124,84,09/09/2004,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+69,M,Home,07/07/2012,30/09/1943,Unkown,NA,2,TRUE,TRUE,FALSE,FALSE,27/06/2012,10,147,80,02/09/2008,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Found is his flat
+48,M,Hospital,19/10/2011,25/08/1962,Spontaneous Intercerebral Haemorrhage,Cerebellar Bleed,90,FALSE,FALSE,FALSE,FALSE,15/06/2011,126,109,68,04/11/2010,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Known alcoholic liver disease
+45,M,Street,16/11/2015,16/08/1970,Overdose,Accidental Overdose,70,TRUE,FALSE,FALSE,TRUE,16/02/2015,273,100,69,09/05/2011,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+51,M,Home,24/10/2013,20/11/1961,Unkown,NA,224,TRUE,TRUE,NA,NA,14/10/2013,10,117,82,07/06/2012,FALSE,FALSE,TRUE - Olanzapine,FALSE,The Greenhouse,Hackney,Had recent GI bleed just prior to his death. Found in own home
+66,M,Hospital,20/08/2005,24/12/1938,Alcoholic liver disease,Upper GI Bleed,276,FALSE,FALSE,FALSE,FALSE,31/05/2005,81,114,71,25/05/2005,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Upper GI bleed causing death
+47,F,Hospice,26/07/2014,23/12/1966,SCC Lung,Lung Cancer,100,TRUE,TRUE,FALSE,TRUE,10/07/2014,16,122,88,24/10/2013,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+37,M,Street,23/09/2010,14/12/1978,Overdose - ?accidental,Accidental Overdose,NA,TRUE,NA,NA,NA,21/10/2009,337,118,69,21/10/2009,NA,NA,NA,TRUE,The Greenhouse,Hackney,Only attended for registration visit. Found dead in betting shop with needle in arm
+34,M,NA,10/12/2014,21/03/1981,Suicide - Hanging,Suicide,189,TRUE,FALSE,FALSE,FALSE,28/01/2014,316,109,64,04/02/2013,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+50,M,Hospital,01/11/2013,03/03/1963,Assault,Murdered,525,FALSE,FALSE,FALSE,FALSE,21/03/2013,225,118,80,12/07/2012,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+31,M,Hospital,06/09/2012,23/05/1981,Burns,Accidental,16,TRUE,TRUE,FALSE,FALSE,18/07/2012,50,121,78,14/03/2011,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+45,M,Hospital,16/12/2015,15/06/1970,Unkown,NA,196,TRUE,TRUE,FALSE,FALSE,03/12/2015,13,142,91,08/06/2015,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+46,M,Street,24/07/2011,14/03/1965,Unkown,NA,NA,FALSE,FALSE,FALSE,FALSE,14/07/2011,10,123,89,09/09/2010,TRUE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Had TB and Poorly controlled DM 
+47,M,Hospice,08/08/2012,21/10/1964,Glioblastoma Multiforme,Non Lung or Liver Cancer,No,TRUE,FALSE,FALSE,FALSE,27/04/2012,103,124,84,27/04/2012,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Engaged poorly with chemotherapy. Was in hospice for terminal 2 months
+34,F,Street,20/12/2014,01/08/1980,Overdose - ?accidental,Accidental Overdose,1,FALSE,FALSE,FALSE,FALSE,26/09/2013,450,117,73,16/05/2013,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Ecstacy overdose
+67,M,NA,NA,05/03/1937,SCC Lung,Lung Cancer,NA,FALSE,FALSE,FALSE,FALSE,16/07/2004,NA,132,90,14/04/2004,TRUE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Was under palliative care team
+83,M,Hospital,30/08/2006,28/09/1922,Pneumonia,Pneumonia,0,FALSE,FALSE,FALSE,FALSE,03/07/2006,58,181,100,19/06/2006,TRUE,TRUE,TRUE - Olanzapine,FALSE,The Greenhouse,Hackney,Background of IHD
+55,M,Home,19/05/2012,03/07/1957,Unkown,NA,105,FALSE,FALSE,FALSE,FALSE,29/03/2012,51,156,98,29/03/2012,FALSE,TRUE,FALSE,FALSE,The Greenhouse,Hackney,
+34,F,Home,19/05/2014,10/05/1980,Suspected Overdose,Accidental Overdose,210,TRUE,FALSE,FALSE,FALSE,17/03/2014,63,121,74,18/02/2014,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Decomposed body
+48,M,Hospital,01/02/2013,06/09/1964,Decompensated liver disease,Decompensated Liver Disease,50,FALSE,FALSE,FALSE,TRUE,18/01/2013,14,145,98,28/09/2012,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+54,F,Hospital,21/01/2013,15/02/1958,Head Injury,Accidental,266,FALSE,FALSE,FALSE,TRUE,02/11/2012,80,127,80,09/05/2001,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+44,M,Street,11/12/2015,17/02/1971,Suicide,Suicide,196,FALSE,TRUE,FALSE,TRUE,25/09/2015,77,115,88,27/01/2015,FALSE,FALSE,TRUE - Olanzapine,FALSE,The Greenhouse,Hackney,Suscpected suicide - body found in river
+51,M,Hospice,17/10/2014,24/02/1964,Adenocarcinoma of right lung,Lung Cancer,448,FALSE,FALSE,FALSE,FALSE,28/07/2014,81,103,68,06/02/2014,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+50,M,Hospice,10/08/2015,07/01/1965,Hepatocellular Carcinoma,Hepatocellular Carcinoma,200,TRUE,TRUE,FALSE,TRUE,20/05/2015,82,110,70,25/11/2014,FALSE,TRUE,FALSE,FALSE,The Greenhouse,Hackney,
+88,F,Hospital,16/01/2011,07/03/2023,Fall,Decompensated Liver Disease,0,FALSE,FALSE,FALSE,FALSE,13/10/2010,95,138,82,11/10/2010,FALSE,TRUE,FALSE,FALSE,The Greenhouse,Hackney,
+40,M,Hospital,03/09/2013,11/04/1973,Decompensated liver disease,Decompensated Liver Disease,294,TRUE,FALSE,FALSE,TRUE,03/07/2013,62,135,100,19/07/2012,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Ended up with multi-organ failure and sepsis secondary to liver disease
+44,F,Hospital,24/08/2009,29/10/1964,Decompensated liver disease,Upper GI Bleed,112,TRUE,FALSE,FALSE,TRUE,20/05/2009,96,149,79,23/01/2009,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Had a Upper GI bleed
+38,M,NA,NA,25/05/1976,Unkown,NA,250,TRUE,FALSE,FALSE,TRUE,20/07/2014,NA,126,88,01/05/2014,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+74,M,NA,NA,16/07/1930,Unkown,NA,42,NA,NA,NA,NA,19/05/2004,NA,173,91,19/05/2004,NA,NA,NA,TRUE,The Greenhouse,Hackney,Seen only for new patient health check before death
+57,M,Hospital,27/11/2015,08/01/1958,Decompensated liver disease,Decompensated Liver Disease,189,FALSE,TRUE,FALSE,FALSE,23/11/2015,4,115,80,09/11/2015,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Referred into hospital for terminal episode by GP
+53,F,Home,03/07/2015,09/10/1961,Bronchopneumonia,Pneumonia,NA,FALSE,FALSE,FALSE,FALSE,11/06/2015,22,112,80,19/02/2015,FALSE,FALSE,,FALSE,The Greenhouse,Hackney,Secondary to COPD. Partner found her collapsed
+56,M,NA,NA,12/04/1958,Unkown,NA,0,FALSE,FALSE,FALSE,FALSE,21/03/2014,NA,116,77,21/03/2014,TRUE,TRUE,FALSE,FALSE,The Greenhouse,Hackney,
+40,M,NA,12/01/2009,10/01/1969,Unkown,NA,4,TRUE,FALSE,FALSE,TRUE,07/11/2008,66,123,83,06/11/2008,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Amyloidosis. HIV. ESRF
+66,M,Hospice,20/11/2009,11/07/1942,Metastatic Gastric Cancer,Non Lung or Liver Cancer,0,FALSE,FALSE,FALSE,FALSE,16/10/2009,35,155,84,02/08/2006,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,GP admitted to hospital who d/c to hospice
+63,M,Home,28/12/2004,07/10/1941,Unascertainable,Inconclusive,28,FALSE,FALSE,FALSE,FALSE,10/11/2004,48,120,80,28/07/2006,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,Found dead in own home
+49,M,Hospital,29/03/2014,02/01/1965,Decompensated liver disease,Decompensated Liver Disease,260,FALSE,FALSE,FALSE,FALSE,20/06/2013,282,149,85,06/06/2013,FALSE,FALSE,FALSE,FALSE,The Greenhouse,Hackney,
+30,M,NA,NA,22/02/1980,Unkown,NA,15,NA,NA,NA,NA,02/10/2009,NA,127,76,02/10/2009,NA,NA,NA,TRUE,The Greenhouse,Hackney,Only attended for registration visit
+45,M,NA,19/02/2013,21/05/1967,NA,NA,150,NA,NA,NA,NA,22/11/2012,89,139,91,22/11/2012,NA,NA,NA,TRUE,The Greenhouse,Hackney,Only attended for registration visit

@@ -1,5 +1,5 @@
 ---
-title: "Primary Care Homeless Health Data"
+title: "Primary Care Homeless Mortality Data"
 output: 
   html_document:
     theme: sandstone
@@ -19,25 +19,24 @@ library(dplyr)
 
 ```
 
-*This business of people just dying like animals, for instance, with nobody standing by, nobody interested, the death not even noticed till the morning* ~  George Orwell _from_ How The Poor Die
+*"This business of people just dying like animals, for instance, with nobody standing by, nobody interested, the death not even noticed till the morning"* ~  George Orwell writing in "_How The Poor Die_"
  
 
 ## {.tabset  .tabset-fade .tabset-pills}
 
 ### Background
 
-This site is a collaboration between clinician and computer scientist to help bridge the gap in the paucity of homeless health data.  Please click on the tabs above to create your own graphs where mortality and population level data can be viewed.
+This site is a repostary of homeless mortality data from within the primary care services. Please use the tabs above to view and manipulate the data.
 
-Over time we hope that all homeless primary care services will be happy to share their anonymized data on this site, we hope that the contributing services will find the data we show to be of use, at the very least we hope to be able to provide a picture of what the health of homeless is like. We dare to dream further however, and hope that this site in time may allow us to know where to focus our efforts and play a part, however small in improving the health care outcomes of our homeless patients.
+Over time we hope that all health services dealing with the health of the homeless will be happy to share their anonymized data on this site. We hope that clinicians and researchers may find the data to be of use and, at the very least we hope to be able to provide a picture of what the health of homeless is like. We dare to dream further however, and hope that this site in time may allow us to know where to focus our efforts and play a part, however small, in improving the health care outcomes of our homeless patients.
 
-Whilst the greatest care has been taken in extrapolating the data, front line clinicians know that the medical record can only tell you so much. Electronic system are hard task masters when it comes to coding data and it would be fair assumptions that most of the epidemiology presented is an underestimate of the actual figure. 
+Whilst the greatest care has been taken in extrapolating the data, front line clinicians know that the medical record can only tell you so much. Electronic system are hard task masters when it comes to coding data and it would be fair assumptions that most of the epidemiology presented is an underestimate of the actual figure.
 
 We hope the data on this site will be of use. We welcome any feedback, requests for collaboration or criticisms. 
-Add some background info
 
 ### Causes of Death
 
-Using the fields below select the data you would like to use to draw up a bar plot of looking at the cause of homeless death. *On the x axis we would have cause of death and the y axis age of death.*
+Using the fields below select the data you would like to use to draw up a bar plot of looking at the cause of homeless death. 
 
 ```{r causes_of-death, echo=FALSE}
 
@@ -57,12 +56,12 @@ inputPanel(
               choices = c("All", "Male", "Female"), selected = "All"),
 
   checkboxInput("htn", label= "Hypertension", value = FALSE, width = NULL),
-  checkboxInput("diabetes", label= "Diabetes", value = FALSE, width = NULL),
+  checkboxInput("dm", label= "Diabetes", value = FALSE, width = NULL),
   checkboxInput("antipsychotic", label= "On Anti-psychotic", value = FALSE, width = NULL),
   checkboxInput("hepB", label= "Hepatitis B", value = FALSE, width = NULL),
   checkboxInput("hepC", label= "Hepatitis C", value = FALSE, width = NULL),
  
-  sliderInput("alcohol", label = "Units of alcohol drunk are less than:",
+  sliderInput("alcohol", label = "Units of alcohol consumed are more than or equal to:",
               min = 0, max = 600, value = 20, step = 10)
 )
 
@@ -143,6 +142,13 @@ renderPlot({
             filter(HTN %in% input$htn)
       }
       
+      dm <- c(input$dm)
+      if(input$dm)
+      {
+        Death <- Death %>%
+            filter(Diabetes %in% input$dm)
+      }
+  
       antipsychotic <-c(input$antipsychotic)
       if(input$antipsychotic)
       {
@@ -165,10 +171,11 @@ renderPlot({
       }
 
       Death <- Death %>%
-            filter(Alcohol > input$alcohol)
+            filter(Alcohol >= input$alcohol)
   
       b <- ggplot(Death, aes(x=Classification_of_Death)) +
-       geom_bar(stat="count", width=0.7, fill="steelblue")  
+       geom_bar(stat="count", width=0.7, fill="steelblue")+
+        theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
       print(b)
   
 })
@@ -179,7 +186,7 @@ renderPlot({
 
 ### Plot Associations
 
-Here it would be nice if we had some scatter plots. 
+Please use the drop down menu below to decide on what the y-axis should be. The x-axis is a static field and indicates cause of death. 
 
 
 ```{r associations, echo=FALSE}
@@ -189,14 +196,11 @@ Death <- read.csv("Data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
 inputPanel(
   selectInput("yaxis", "Y axis Value:",
                 list("Units of Alcohol" = "Alcohol",
-                     "Last Systolic Blood Pressure" = "Last_Systolic"))
+                     "Last Systolic Blood Pressure" = "Last_Systolic",
+                     "Last Diastolic Blood Pressure" = "Last_Diastolic",
+                     "Days Since Last Seen" = "Time_Since_Seen"))
 )
 
-
-renderText({ 
-      a= "Death$"
-      paste0(a,input$yaxis)
-    })
 
 
 renderPlot({
@@ -209,40 +213,132 @@ renderPlot({
       print(p)
       
       }
-      
-  if(input$yaxis == "Last_Systolic"){
+      else if(input$yaxis == "Last_Systolic"){
   
-      p <- ggplot(Death, aes(x=Age_at_Death, y=Last_Systolic)) +
-      geom_point(shape=1, size=5)
-      print(p)
-  }
+      q <- ggplot(Death, aes(x=Age_at_Death, y=Last_Systolic)) +
+      geom_point(shape=1, size=3)
+      print(q)
+      }
+      else if(input$yaxis == "Last_Diastolic"){
+  
+      q <- ggplot(Death, aes(x=Age_at_Death, y=Last_Diastolic)) +
+      geom_point(shape=1, size=3)
+      print(q)
+      }
+      else if(input$yaxis == "Time_Since_Seen"){
+  
+      q <- ggplot(Death, aes(x=Age_at_Death, y=Time_Since_Seen)) +
+      geom_point(shape=1, size=3)
+      print(q)
+      }
 })
 
 ```
 
 ### Practice Level Epidemiology
 
-Please select from the fields below the epidemiological data submitted by practices. Would be good to let practices compare by regions and against indiviudal practices.
+Please select from the fields below the epidemiological data submitted by practices.
 
-I think to keep the graph uncluttered we would have to have a check box to display the type of data that wants to be viewed e.g. hepatitis prevalance. May just have a drop down menu saying All/Male/Female.
 
-May be a useful feature to compare the trends in one practice over time also.
+```{r population, echo=FALSE}
+
+Population <- read.csv("Data/Population.csv", header=TRUE, sep=",", as.is=TRUE)
+
+
+inputPanel(
+
+  selectInput("cond", label = "Condition for comparison:",
+              choices = c("Harmful Alcohol Abuse", "Opiod Addiction", "Bendzodiazapine Misuse","Viral Hepatitis", "HIV", "Diabetes", "Hypertension", "On Anti-Psychotic", "Sex Workers", "Victim of Domestic Violence or Rape"), selected = "Harmful Alcohol Abuse"),
+
+   selectInput("sex", label = "Gender:",
+              choices = c("All", "Male", "Female"), selected = "All"),  
+
+  checkboxInput("healthe1", label= "Health E1", value = TRUE, width = NULL),
+  checkboxInput("thegreenhouse", label= "The Greenhouse", value = TRUE, width = NULL),
+  checkboxInput("average", label= "Average", value = TRUE, width = NULL)
+)
+
+
+renderPlot({
+  
+          if(input$cond == "Harmful Alcohol Abuse"){
+            
+            if(input$sex == "Male") {yax="Male_Alcohol"}
+            else if(input$sex == "Female") {yax="Female_Alcohol"}
+            else if(input$sex == "All") {yax="Total_Alcohol"}
+          }
+          else  if(input$cond == "Opiod Addiction"){
+
+            if(input$sex == "Male") {yax="Male_Opiod"}
+            else if(input$sex == "Female") {yax="Female_Opiod"}
+            else if(input$sex == "All") {yax="Total_Opiod"}  
+          }
+          else  if(input$cond == "Bendzodiazapine Misuse"){
+
+            if(input$sex == "Male") {yax="Male_Bendzo"}
+            else if(input$sex == "Female") {yax="Female_Bendzo"}
+            else if(input$sex == "All") {yax="Total_Bendzo"}  
+          }
+          else  if(input$cond == "Viral Hepatitis"){
+
+            if(input$sex == "Male") {yax="Male_Hep"}
+            else if(input$sex == "Female") {yax="Female_Hep"}
+            else if(input$sex == "All") {yax="Total_Hep"}  
+          }
+          else  if(input$cond == "HIV"){
+
+            if(input$sex == "Male") {yax="Male_HIV"}
+            else if(input$sex == "Female") {yax="Female_HIV"}
+            else if(input$sex == "All") {yax="Total_HIV"}  
+          }
+          else  if(input$cond == "Diabetes"){
+
+            if(input$sex == "Male") {yax="Male_DM"}
+            else if(input$sex == "Female") {yax="Female_DM"}
+            else if(input$sex == "All") {yax="Total_DM"}  
+          }
+          else  if(input$cond == "Hypertension"){
+
+            if(input$sex == "Male") {yax="Male_HTN"}
+            else if(input$sex == "Female") {yax="Female_HTN"}
+            else if(input$sex == "All") {yax="Total_HTN"}  
+          }
+          else  if(input$cond == "Sex Workers"){
+
+            if(input$sex == "Male") {yax="Male_SW"}
+            else if(input$sex == "Female") {yax="Female_SW"}
+            else if(input$sex == "All") {yax="Total_SW"}  
+          }
+          else  if(input$cond == "Victim of Domestic Violence or Rape"){
+
+            if(input$sex == "Male") {yax="Male_DW"}
+            else if(input$sex == "Female") {yax="Female_DW"}
+            else if(input$sex == "All") {yax="Total_DW"}  
+          }
+      
+          t <- ggplot(Population, aes_string("Place", yax)) +
+          geom_bar(stat="identity")
+          print(t)
+  
+})
+
+```
 
 
 ### Trends Over Time
 
-Here I thought we could allow death data to be viewed over a time. Maybe by drop down box allowing people to choose the year or cause of death....but I wonder if there is a more elegant soloution?
+This part of the site is still under construction. In time we hope that it will present a practice specific time series. 
+
+```{r time, echo=FALSE}
+
+
+```
 
 ### Access Raw Data
 
-Add some tables and discussion here. Is it easy to run reports. For example could someone slect - show me where cause of death is "Decompensated Liver Disease"?
+Please find the data used in the creation of the graphics below.
 
 ```{r echo=FALSE}
-renderDataTable({iris})
+renderDataTable({Death})
 ```
 
-### Links
-
-[Crisis Report Into Homless Death](http://www.crisis.org.uk/data/files/publications/Homelessness%20kills%20-%20Executive%20Summary.pdf).
-
-### About
