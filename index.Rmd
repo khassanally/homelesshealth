@@ -40,7 +40,7 @@ Using the fields below select the data you would like to use to draw up a bar pl
 
 ```{r causes_of-death, echo=FALSE}
 
-Death <- read.csv("Data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
+Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
 
 inputPanel(
   selectInput("age_at_death", label = "Age at death:",
@@ -191,7 +191,7 @@ Please use the drop down menu below to decide on what the y-axis should be. The 
 
 ```{r associations, echo=FALSE}
 
-Death <- read.csv("Data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
+Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
 
 inputPanel(
   selectInput("yaxis", "Y axis Value:",
@@ -242,7 +242,7 @@ Please select from the fields below the epidemiological data submitted by practi
 
 ```{r population, echo=FALSE}
 
-Population <- read.csv("Data/Population.csv", header=TRUE, sep=",", as.is=TRUE)
+Population <- read.csv("/home/miqdad/homeless_data/Population.csv", header=TRUE, sep=",", as.is=TRUE)
 
 
 inputPanel(
@@ -334,11 +334,13 @@ This part of the site is still under construction. In time we hope that it will 
 
 ```
 
-### Access Raw Data
+### Access Summary Tables
 
-Please find the data used in the creation of the graphics below.
+Tables of key descriptive statistics will appear here to give the user an understanding of the underlying data without being disclosive of sensitive data.
 
 ```{r echo=FALSE}
-renderDataTable({Death})
+# I don't think showing this data publically is a smart idea so commented out
+# perhaps just put aggregates here
+#renderDataTable({Death})
 ```
 
