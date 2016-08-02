@@ -40,7 +40,7 @@ Using the fields below select the data you would like to use to draw up a bar pl
 
 ```{r causes_of-death, echo=FALSE}
 
-Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
+Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=TRUE)
 
 inputPanel(
   selectInput("age_at_death", label = "Age at death:",
@@ -191,7 +191,7 @@ Please use the drop down menu below to decide on what the y-axis should be. The 
 
 ```{r associations, echo=FALSE}
 
-Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE)
+Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=TRUE)
 
 inputPanel(
   selectInput("yaxis", "Y axis Value:",
@@ -242,7 +242,7 @@ Please select from the fields below the epidemiological data submitted by practi
 
 ```{r population, echo=FALSE}
 
-Population <- read.csv("/home/miqdad/homeless_data/Population.csv", header=TRUE, sep=",", as.is=TRUE)
+Population <- read.csv("/home/miqdad/homeless_data/Population.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=TRUE)
 
 
 inputPanel(
