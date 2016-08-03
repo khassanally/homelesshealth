@@ -296,9 +296,9 @@ renderPlot({
           }
           else  if(input$cond == "Victim of Domestic Violence or Rape"){
 
-            if(input$sex == "Male") {yax="Male_DW"}
-            else if(input$sex == "Female") {yax="Female_DW"}
-            else if(input$sex == "All") {yax="Total_DW"}  
+            if(input$sex == "Male") {yax="Male_DV"}
+            else if(input$sex == "Female") {yax="Female_DV"}
+            else if(input$sex == "All") {yax="Total_DV"}  
           }
       
           t <- ggplot(population_data, aes_string("place", tolower(yax))) +
