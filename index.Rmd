@@ -51,7 +51,7 @@ inputPanel(
               choices = c("Anywhere", "Hospital", "Hospice", "Street", "Home"), selected = "Anywhere"),  
   
    selectInput("gender", label = "Gender:",
-              choices = c("All", "Male", "Female"), selected = "All"),
+              choices = list("All", "Male" = "M", "Female" = "F"), selected = "All"),
 
   checkboxInput("htn", label= "Hypertension", value = FALSE, width = NULL),
   checkboxInput("dm", label= "Diabetes", value = FALSE, width = NULL),
@@ -72,7 +72,7 @@ renderPlot({
             filter(age_at_death>30 & age_at_death<40)
       } else if(input$age_at_death == "40-50"){
         death_data = death_data %>%
-            filter(age_at_aeath>40 & age_at_aeath<50)
+            filter(age_at_death>40 & age_at_aeath<50)
       } else if(input$age_at_death == "40-50"){
         death_data = death_data %>%
             filter(age_at_death>40 & age_at_aeath<50)
@@ -81,7 +81,7 @@ renderPlot({
             filter(age_at_death>50 & age_at_death<60)
       } else if(input$age_at_death == "Over 60"){
         death_data = death_data %>%
-            filter(age_at_aeath>60)
+            filter(age_at_death>60)
       }
     
       if(input$practice != "All"){
@@ -192,7 +192,9 @@ inputPanel(
               selected = "alcohol"),
 
    selectInput("sex", label = "Gender:",
-              choices = c("All", "Male", "Female"), selected = "All")  
+              choices = list("All" = "total", 
+                             "Male" = "male", 
+                             "Female" = "female"), selected = "total")  
 )
 
 
