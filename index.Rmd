@@ -192,13 +192,22 @@ inputPanel(
               selected = "alcohol"),
 
    selectInput("sex", label = "Gender:",
+<<<<<<< HEAD
               choices = c("All", "Male", "Female"), selected = "All")  
+=======
+              choices = c("All", "Male", "Female"), selected = "All"),  
+>>>>>>> 75cec4791a37153f669ad71bf5067784888d874f
 )
 
 
 renderPlot({
           yax = paste0(input$cond,"_",input$sex)
+<<<<<<< HEAD
           t = ggplot(population_data, aes_string("place", tolower(yax))) +
+=======
+
+          t <- ggplot(population_data, aes_string("place", tolower(yax))) +
+>>>>>>> 75cec4791a37153f669ad71bf5067784888d874f
                geom_bar(stat="identity")
           print(t)
 })
