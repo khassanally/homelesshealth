@@ -233,74 +233,26 @@ colnames(population_data) = tolower(colnames(population_data))
 inputPanel(
 
   selectInput("cond", label = "Condition for comparison:",
-              choices = c("Harmful Alcohol Abuse", "Opiod Addiction", "Bendzodiazapine Misuse","Viral Hepatitis", "HIV", "Diabetes", "Hypertension", "On Anti-Psychotic", "Sex Workers", "Victim of Domestic Violence or Rape"), selected = "Harmful Alcohol Abuse"),
+              choices = list("Harmful Alcohol Abuse" = "alcohol",
+                             "Opiod Addiction" = "opiod",
+                             "Bendzodiazapine Misuse" = "bendzo",
+                             "Viral Hepatitis" = "hep",
+                             "HIV" = "hiv",
+                             "Diabetes" = "dm",
+                             "Hypertension" = "htn",
+                             "On Anti-Psychotic" = "antipsych",
+                             "Sex Workers" = "sw",
+                             "Victim of Domestic Violence or Rape" = "dv"), 
+              selected = "alcohol"),
 
    selectInput("sex", label = "Gender:",
               choices = c("All", "Male", "Female"), selected = "All"),  
-
-  checkboxInput("healthe1", label= "Health E1", value = TRUE, width = NULL),
-  checkboxInput("thegreenhouse", label= "The Greenhouse", value = TRUE, width = NULL),
-  checkboxInput("average", label= "Average", value = TRUE, width = NULL)
 )
 
 
 renderPlot({
-  
-          if(input$cond == "Harmful Alcohol Abuse"){
-            
-            if(input$sex == "Male") {yax="Male_Alcohol"}
-            else if(input$sex == "Female") {yax="Female_Alcohol"}
-            else if(input$sex == "All") {yax="Total_Alcohol"}
-          }
-          else  if(input$cond == "Opiod Addiction"){
+          yax = paste0(input$cond,"_",input$sex)
 
-            if(input$sex == "Male") {yax="Male_Opiod"}
-            else if(input$sex == "Female") {yax="Female_Opiod"}
-            else if(input$sex == "All") {yax="Total_Opiod"}  
-          }
-          else  if(input$cond == "Bendzodiazapine Misuse"){
-
-            if(input$sex == "Male") {yax="Male_Bendzo"}
-            else if(input$sex == "Female") {yax="Female_Bendzo"}
-            else if(input$sex == "All") {yax="Total_Bendzo"}  
-          }
-          else  if(input$cond == "Viral Hepatitis"){
-
-            if(input$sex == "Male") {yax="Male_Hep"}
-            else if(input$sex == "Female") {yax="Female_Hep"}
-            else if(input$sex == "All") {yax="Total_Hep"}  
-          }
-          else  if(input$cond == "HIV"){
-
-            if(input$sex == "Male") {yax="Male_HIV"}
-            else if(input$sex == "Female") {yax="Female_HIV"}
-            else if(input$sex == "All") {yax="Total_HIV"}  
-          }
-          else  if(input$cond == "Diabetes"){
-
-            if(input$sex == "Male") {yax="Male_DM"}
-            else if(input$sex == "Female") {yax="Female_DM"}
-            else if(input$sex == "All") {yax="Total_DM"}  
-          }
-          else  if(input$cond == "Hypertension"){
-
-            if(input$sex == "Male") {yax="Male_HTN"}
-            else if(input$sex == "Female") {yax="Female_HTN"}
-            else if(input$sex == "All") {yax="Total_HTN"}  
-          }
-          else  if(input$cond == "Sex Workers"){
-
-            if(input$sex == "Male") {yax="Male_SW"}
-            else if(input$sex == "Female") {yax="Female_SW"}
-            else if(input$sex == "All") {yax="Total_SW"}  
-          }
-          else  if(input$cond == "Victim of Domestic Violence or Rape"){
-
-            if(input$sex == "Male") {yax="Male_DV"}
-            else if(input$sex == "Female") {yax="Female_DV"}
-            else if(input$sex == "All") {yax="Total_DV"}  
-          }
-      
           t <- ggplot(population_data, aes_string("place", tolower(yax))) +
                geom_bar(stat="identity")
           print(t)
