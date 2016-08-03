@@ -40,7 +40,7 @@ Using the fields below select the data you would like to use to draw up a bar pl
 
 ```{r causes_of-death, echo=FALSE}
 
-Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=TRUE)
+Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=FALSE)
 
 inputPanel(
   selectInput("age_at_death", label = "Age at death:",
@@ -73,44 +73,44 @@ renderPlot({
       if(input$age_at_death == "Under 30")
       {
         Death <- Death %>%
-            filter(Age_at_Death < 30)
+            filter(age_at_death < 30)
       }
       else if(input$age_at_death == "30-40")
       {
         Death <- Death %>%
-            filter(Age_at_Death>30)
+            filter(age_at_death>30)
         
         Death <- Death %>%
-            filter(Age_at_Death<40)
+            filter(age_at_death<40)
       }
       else if(input$age_at_death == "40-50")
       {
         Death <- Death %>%
-            filter(Age_at_Death>40)
+            filter(age_at_aeath>40)
         
         Death <- Death %>%
-            filter(Age_at_Death<50)
+            filter(age_at_aeath<50)
       }
       else if(input$age_at_death == "40-50")
       {
         Death <- Death %>%
-            filter(Age_at_Death>40)
+            filter(age_at_death>40)
         
         Death <- Death %>%
-            filter(Age_at_Death<50)
+            filter(age_at_aeath<50)
       }
       else if(input$age_at_death == "50-60")
       {
         Death <- Death %>%
-            filter(Age_at_Death>50)
+            filter(age_at_death>50)
         
         Death <- Death %>%
-            filter(Age_at_Death<60)
+            filter(age_at_death<60)
       }
       else if(input$age_at_death == "Over 60")
       {
         Death <- Death %>%
-            filter(Age_at_Death>60)
+            filter(age_at_aeath>60)
       }
     
       
@@ -118,64 +118,66 @@ renderPlot({
       if(input$practice != "All")
       {
       Death <- Death %>%
-           filter(Practice %in% input$practice)
+           filter(practice %in% input$practice)
       }
       
       place_of_death <-c(input$place_of_death)
       if(input$place_of_death != "Anywhere")
       {
         Death <- Death %>%
-          filter(Place_of_Death %in% input$place_of_death)
+          filter(place_of_death %in% input$place_of_death)
       }
       
       gender <-c(input$gender)
       if(input$gender != "All")
       {
         Death <- Death %>%
-          filter(Gender %in% input$gender)
+          filter(gender %in% input$gender)
       }
       
       htn <-c(input$htn)
       if(input$htn)
       {
         Death <- Death %>%
-            filter(HTN %in% input$htn)
+            filter(htn %in% input$htn)
       }
       
       dm <- c(input$dm)
       if(input$dm)
       {
         Death <- Death %>%
-            filter(Diabetes %in% input$dm)
+            filter(diabetes %in% input$dm)
       }
   
       antipsychotic <-c(input$antipsychotic)
       if(input$antipsychotic)
       {
         Death <- Death %>%
-            filter(On_Antipsychotic %in% input$antipsychotic)
+            filter(on_antipsychotic %in% input$antipsychotic)
       }
       
       hepB <-c(input$hepB)
       if(input$hepB)
       {
         Death <- Death %>%
-            filter(HepB %in% input$hepB)
+            filter(hepb %in% input$hepB)
       }
       
       hepC <-c(input$hepC)
       if(input$hepC)
       {
         Death <- Death %>%
-            filter(HepC %in% input$hepC)
+            filter(hepc %in% input$hepC)
       }
 
       Death <- Death %>%
-            filter(Alcohol >= input$alcohol)
+            filter(alcohol >= input$alcohol)
   
-      b <- ggplot(Death, aes(x=Classification_of_Death)) +
-       geom_bar(stat="count", width=0.7, fill="steelblue")+
-        theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+      b <- ggplot(Death, aes(x=classification_of_death)) +
+           xlab("Classification of Death") +
+           ylab("Count") +
+           geom_bar(stat="count", width=0.7, fill="steelblue")+
+           theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
       print(b)
   
 })
@@ -191,7 +193,7 @@ Please use the drop down menu below to decide on what the y-axis should be. The 
 
 ```{r associations, echo=FALSE}
 
-Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=TRUE)
+Death <- read.csv("/home/miqdad/homeless_data/Death.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=FALSE)
 
 inputPanel(
   selectInput("yaxis", "Y axis Value:",
@@ -204,33 +206,25 @@ inputPanel(
 
 
 renderPlot({
-  
-      
       if(input$yaxis == "Alcohol"){
-
-      p <- ggplot(Death, aes(x=Age_at_Death, y=Alcohol), fill=Practice) +
-      geom_point(shape=1, size=3, na.rm=TRUE, aes(color=Practice, shape=Practice))
-      print(p)
-      
+        q <- ggplot(Death, aes(x=age_at_death, y=alcohol), fill=practice) +
+           geom_point(shape=1, size=3, na.rm=TRUE, aes(color=practice, shape=practice))
       }
       else if(input$yaxis == "Last_Systolic"){
   
-      q <- ggplot(Death, aes(x=Age_at_Death, y=Last_Systolic)) +
-      geom_point(shape=1, size=3)
-      print(q)
+        q <- ggplot(Death, aes(x=age_at_death, y=last_systolic)) +
+           geom_point(shape=1, size=3)
       }
       else if(input$yaxis == "Last_Diastolic"){
-  
-      q <- ggplot(Death, aes(x=Age_at_Death, y=Last_Diastolic)) +
-      geom_point(shape=1, size=3)
-      print(q)
+        q <- ggplot(Death, aes(x=age_at_death, y=last_diastolic)) +
+           geom_point(shape=1, size=3)
       }
       else if(input$yaxis == "Time_Since_Seen"){
-  
-      q <- ggplot(Death, aes(x=Age_at_Death, y=Time_Since_Seen)) +
-      geom_point(shape=1, size=3)
-      print(q)
+        q <- ggplot(Death, aes(x=Age_at_Death, y=Time_Since_Seen)) +
+           geom_point(shape=1, size=3)
       }
+      q <- q + xlab("Age at Death") + ylab(gsub("_"," ",input$yaxis))
+      print(q)
 })
 
 ```
@@ -242,7 +236,7 @@ Please select from the fields below the epidemiological data submitted by practi
 
 ```{r population, echo=FALSE}
 
-Population <- read.csv("/home/miqdad/homeless_data/Population.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=TRUE)
+Population <- read.csv("/home/miqdad/homeless_data/Population.csv", header=TRUE, sep=",", as.is=TRUE, stringsAsFactors=FALSE)
 
 
 inputPanel(
@@ -316,8 +310,8 @@ renderPlot({
             else if(input$sex == "All") {yax="Total_DW"}  
           }
       
-          t <- ggplot(Population, aes_string("Place", yax)) +
-          geom_bar(stat="identity")
+          t <- ggplot(Population, aes_string("place", tolower(yax))) +
+               geom_bar(stat="identity")
           print(t)
   
 })
