@@ -72,9 +72,6 @@ renderPlot({
             filter(age_at_death>30 & age_at_death<40)
       } else if(input$age_at_death == "40-50"){
         death_data = death_data %>%
-            filter(age_at_death>40 & age_at_aeath<50)
-      } else if(input$age_at_death == "40-50"){
-        death_data = death_data %>%
             filter(age_at_death>40 & age_at_death<50)
       } else if(input$age_at_death == "50-60"){
         death_data = death_data %>%
