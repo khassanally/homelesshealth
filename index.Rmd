@@ -60,7 +60,7 @@ inputPanel(
   checkboxInput("hepC", label= "Hepatitis C", value = FALSE, width = NULL),
  
   sliderInput("alcohol", label = "Units of alcohol consumed are more than or equal to:",
-              min = 0, max = 600, value = 20, step = 10)
+              min = 0, max = 600, value = 0, step = 10)
 )
 
 renderPlot({
